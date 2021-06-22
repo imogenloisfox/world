@@ -21,6 +21,11 @@
         <a-scene   shadow="type: pcfsoft; autoUpdate: true;">
             <!-- Assets -->
             <a-assets>
+                <img id="sky" src="./sky.jpg">
+                <video id="video_0" loop="true" autoplay="true" src="./ODfinal.mp4"></video>
+                <video id="video_1" loop="true" autoplay="true" src="./ODfinal.mp4"></video>
+                <video id="video_2" loop="true" autoplay="true" src="./ODfinal.mp4"></video>
+                <video id="video_3" loop="true" autoplay="true" src="./ODfinal.mp4"></video>
 				<a-asset-item id="heart_ts01" src="./assets/heart_ts01.gltf"></a-asset-item>
 				<a-asset-item id="Plane" src="./assets/Plane.gltf"></a-asset-item>
 				<a-asset-item id="star.001" src="./assets/star.001.gltf"></a-asset-item>
@@ -41,20 +46,18 @@
 				<a-asset-item id="Woman_Body.001" src="./assets/Woman_Body.001.gltf"></a-asset-item>
 				<a-asset-item id="Woman_Body.002" src="./assets/Woman_Body.002.gltf"></a-asset-item>
 				<a-asset-item id="Woman_Body.003" src="./assets/Woman_Body.003.gltf"></a-asset-item>
-                <img id="sky" src="./sky.jpg">
-                <video id="video_0" loop="true" autoplay="true" src="./ODfinal.mp4"></video>
-                <video id="video_1" loop="true" autoplay="true" src="./ODfinal.mp4"></video>
-                <video id="video_2" loop="true" autoplay="true" src="./ODfinal.mp4"></video>
-                <video id="video_3" loop="true" autoplay="true" src="./ODfinal.mp4"></video>
+                
             </a-assets>
 
             <!-- Entities -->
-            
+            <a-video id="#video_0" src="./ODfinal.mp4" width="28" height="14" scale="1 1 1" position="0 20 -40" rotation="0 0 0" visible="true" shadow="cast: false" ></a-video>
+            <a-video id="#video_1" src="./ODfinal.mp4" width="28" height="14" scale="1 1 1" position="-40 20 0" rotation="0 90 0" visible="true" shadow="cast: false" ></a-video>
+            <a-video id="#video_2" src="./ODfinal.mp4" width="28" height="14" scale="1 1 1" position="0 20 40" rotation="0 0 0" visible="true" shadow="cast: false" ></a-video>
+            <a-video id="#video_3" src="./ODfinal.mp4" width="28" height="14" scale="1 1 1" position="40 20 0" rotation="0 90 0" visible="true" shadow="cast: false" ></a-video>
+           
 			<a-entity id="#heart_ts01" gltf-model="#heart_ts01" scale="1 1 1" position="7.5538225173950195 11.241669654846191 23.620864868164062" visible="true" shadow="cast: true"  geometry="" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 400"  animation= "property: rotation; to: 0 -360 0; loop: true; dur: 10000" ></a-entity>
 			<a-entity id="#Plane" gltf-model="#Plane" scale="5 5 5" position="-0.006989083252847195 -0.049022477120161057 -0.0" visible="true" shadow="cast: true" ></a-entity>
-			
 			<a-entity id="#star.002" gltf-model="#star.002" scale="1 1 1" position="20.98257064819336 5.443856716156006 -19.60308074951172" visible="true" shadow="cast: true"  geometry="" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 400"  ></a-entity>
-			
 			<a-entity id="#stemflower" gltf-model="#stemflower" scale="1 1 1" position="2.7345545291900635 6.460258483886719 -11.937718391418457" visible="true" shadow="cast: true" ></a-entity>
 			<a-entity id="#stemflower.001" gltf-model="#stemflower.001" scale="1 1 1" position="11.147466659545898 7.9954328536987305 -11.522161483764648" visible="true" shadow="cast: true" ></a-entity>
 			<a-entity id="#stemflower.002" gltf-model="#stemflower.002" scale="1 1 1" position="6.131731033325195 11.91242790222168 -13.290295600891113" visible="true" shadow="cast: true"  geometry="" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 400" ></a-entity>
@@ -65,11 +68,7 @@
 			<a-entity id="#Woman_Body.001" gltf-model="#Woman_Body.001" scale="1 1 1" position="6.726186752319336 4.906411170959473 -13.402146339416504" visible="true" shadow="cast: true"  geometry="" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 400"  animation= "property: rotation; to: 0 -360 0; loop: true; dur: 20000" ></a-entity>
 			<a-entity id="#Woman_Body.002" gltf-model="#Woman_Body.002" scale="1 1 1" position="-19.9123592376709 6.258100509643555 -11.810527801513672" visible="true" shadow="cast: true"  geometry="" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 400"   ></a-entity>
 			<a-entity id="#Woman_Body.003" gltf-model="#Woman_Body.003" scale="1 1 1" position="20.484241485595703 4.8927531242370605 5.136698246002197" visible="true" shadow="cast: true"  geometry="" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 400"  animation= "property: rotation; to: 0 0 360; loop: true; dur: 30000" ></a-entity>
-            <a-video id="#video_0" src="./ODfinal.mp4" width="28" height="14" scale="1 1 1" position="0 20 -40" rotation="0 0 0" visible="true" shadow="cast: false" ></a-video>
-            <a-video id="#video_1" src="./ODfinal.mp4" width="28" height="14" scale="1 1 1" position="-40 20 0" rotation="0 90 0" visible="true" shadow="cast: false" ></a-video>
-            <a-video id="#video_2" src="./ODfinal.mp4" width="28" height="14" scale="1 1 1" position="0 20 40" rotation="0 0 0" visible="true" shadow="cast: false" ></a-video>
-            <a-video id="#video_3" src="./ODfinal.mp4" width="28" height="14" scale="1 1 1" position="40 20 0" rotation="0 90 0" visible="true" shadow="cast: false" ></a-video>
-           
+            
             <a-ocean shader="ocean" color="dodgerblue" transparent="true" opacity="0.2" wave-height= "10" depth="20" width="50"></a-ocean>
             
             
