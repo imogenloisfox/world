@@ -3,7 +3,7 @@
      
     <head>
         <title>FOXHOTLINE WORLD</title>
-        <link rel="icon" type="image/png" href="star.png"/>
+        <link rel="icon" type="image/png" href="star999.png"/>
         <meta name="description" content="3D Application">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,10 +22,10 @@
             <!-- Assets -->
             <a-assets>
                 <img id="sky" src="./sky.jpg">
-                <video id="video_0" loop="true" autoplay="autoplay" muted="true" src="./ODfinal.mp4"></video>
-                <video id="video_1" loop="true" autoplay="autoplay" muted="true" src="./ODfinal.mp4"></video>
-                <video id="video_2" loop="true" autoplay="autoplay" muted="true" src="./ODfinal.mp4"></video>
-                <video id="video_3" loop="true" autoplay="autoplay" muted="true" src="./ODfinal.mp4"></video>
+                <video id="video_0" loop="true" autoplay="autoplay" src="./ODfinal.mp4"></video>
+                <img id="image_0" src="./1a.png">
+                <img id="image_1" src="./2a.png">
+                <img id="image_2" src="./4a.png">
 				<a-asset-item id="heart_ts01" src="./assets/heart_ts01.gltf"></a-asset-item>
 				<a-asset-item id="Plane" src="./assets/Plane.gltf"></a-asset-item>
 				<a-asset-item id="star.001" src="./assets/star.001.gltf"></a-asset-item>
@@ -51,11 +51,11 @@
 
             <!-- Entities -->
             <a-video id="#video_0" src="./ODfinal.mp4" width="28" height="14" scale="1 1 1" position="0 20 -40" rotation="0 0 0" visible="true" shadow="cast: false" ></a-video>
-            <a-video id="#video_1" src="./ODfinal.mp4" width="28" height="14" scale="1 1 1" position="-40 20 0" rotation="0 90 0" visible="true" shadow="cast: false" ></a-video>
-            <a-video id="#video_2" src="./ODfinal.mp4" width="28" height="14" scale="1 1 1" position="0 20 40" rotation="0 0 0" visible="true" shadow="cast: false" ></a-video>
-            <a-video id="#video_3" src="./ODfinal.mp4" width="28" height="14" scale="1 1 1" position="40 20 0" rotation="0 90 0" visible="true" shadow="cast: false" ></a-video>
+            <a-image id="#image_0" src="./1a.png" width="28" height="14" scale="1 1 1" position="-40 20 0" rotation="0 90 0" visible="true" shadow="cast: false" ></a-image>
+            <a-image id="#image_1" src="./2a.png" width="28" height="14" scale="1 1 1" position="-40 20 0" rotation="0 90 0" visible="true" shadow="cast: false" ></a-image>
+			<a-image id="#image_2" src="./4a.png" width="28" height="14" scale="1 1 1" position="-40 20 0" rotation="0 90 0" visible="true" shadow="cast: false" ></a-image>
            
-			<a-entity id="#heart_ts01" gltf-model="#heart_ts01" scale="1 1 1" position="7.5538225173950195 11.241669654846191 23.620864868164062" visible="true" shadow="cast: true"  geometry="" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 400"  animation= "property: rotation; to: 0 -360 0; loop: true; dur: 10000" ></a-entity>
+            <a-entity id="#heart_ts01" gltf-model="#heart_ts01" scale="1 1 1" position="7.5538225173950195 11.241669654846191 23.620864868164062" visible="true" shadow="cast: true"  geometry="" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 400"  animation= "property: rotation; to: 0 -360 0; loop: true; dur: 10000" ></a-entity>
 			<a-entity id="#Plane" gltf-model="#Plane" scale="5 5 5" position="-0.006989083252847195 -0.049022477120161057 -0.0" visible="true" shadow="cast: true" ></a-entity>
 			<a-entity id="#star.002" gltf-model="#star.002" scale="1 1 1" position="20.98257064819336 5.443856716156006 -19.60308074951172" visible="true" shadow="cast: true"  geometry="" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 400"  ></a-entity>
 			<a-entity id="#stemflower" gltf-model="#stemflower" scale="1 1 1" position="2.7345545291900635 6.460258483886719 -11.937718391418457" visible="true" shadow="cast: true" ></a-entity>
